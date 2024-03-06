@@ -53,7 +53,7 @@ export default function MovieId() {
                 className="max-h-screen lg:p-10 p-2 md:p-7"
               />
             </div>
-            <div className="content-center grid">
+            <div className="content-center grid px-2 md:px-0">
               <div className="  font-black text-3xl py-4">
                 {movieId.original_title}
               </div>
@@ -64,7 +64,7 @@ export default function MovieId() {
                 </span>
                 {movieId.genres?.map((gen) => {
                   return (
-                    <span className=" text-slate-200 ">
+                    <span className=" text-slate-200 " key={gen.id}>
                       <span>
                         <button className=" border-2  rounded-2xl px-3 mx-2 hover:bg-red-600 text-white">
                           {gen.name}

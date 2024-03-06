@@ -116,7 +116,7 @@ export default function MovieList() {
           modules={[Autoplay, Pagination]}
           className="mySwiper h-[60vh] pt-5"
         >
-          {popular.results.map((pop) => {
+          {popular.results?.map((pop) => {
             let im = "https://image.tmdb.org/t/p/w500" + pop.poster_path;
             return (
               <SwiperSlide key={pop.id}>
@@ -126,7 +126,7 @@ export default function MovieList() {
                   style={{ backgroundImage: `url(${im})` }}
                 >
                   <span className="bg-slate-950 h-full text-slate-300 absolute bottom-0 ">
-                    <span className=" font-extrabold grid text-center md:pt-10">
+                    <span className=" font-extrabold grid text-center md:pt-10 text-2xl">
                       Overview:{" "}
                     </span>{" "}
                     <br />
