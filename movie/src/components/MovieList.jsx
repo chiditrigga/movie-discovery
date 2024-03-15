@@ -89,13 +89,13 @@ export default function MovieList() {
 
   return (
     <div className=" bg-slate-950 text-center pb-10">
-      <div className="  font-black text-3xl text-red-600">MOVIE BOX</div>
+      <div className="  font-black text-3xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"> MOVIE BOX</div>
       <form onSubmit={(e) => searchh(e)} className="pt-2">
         <input
           type="search"
-          placeholder="search"
+          placeholder="search..."
           value={searchs}
-          className="md:w-[70vw] w-[90vw] py-1 rounded-md border-2 border-rose-500"
+          className="md:w-[70vw] w-[90vw] py-1 rounded-md border-2"
           onChange={(e) => setSearchs(e.target.value)}
           name=""
           id=""

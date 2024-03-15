@@ -85,11 +85,11 @@ export default function SeeMore() {
                     />
                     <div>
                       <span className=" font-bold">Title: </span>
-                      <span className=" font-medium">{pop.original_name}</span>
+                      <span className=" font-medium">{pop.original_title}</span>
                     </div>
                     <div>
                       <span className=" font-bold"> Relase Date: </span>
-                      <span>{pop.first_air_date}</span>
+                      <span>{pop.release_date}</span>
                     </div>
                     <div></div>
                   </div>

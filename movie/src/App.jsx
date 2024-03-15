@@ -25,6 +25,7 @@ function App() {
         <Route path="/series" element={<Series />} />
         <Route path="/trending" element={<Trending />} />
         <Route path="/popular" element={<Popular />} />
+        
       </Route>
     )
   );
@@ -32,6 +33,7 @@ function App() {
     <>
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
+        <ReactQueryDevtools/>
       </QueryClientProvider>
     </>
   );
